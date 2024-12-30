@@ -395,6 +395,16 @@ span {
     text-transform: uppercase;
     font-weight: 300;
 }
+.bar i{
+    display: none;
+}
+.fa-xmark {
+    font-size: 25px;
+    display: none; /* Oculta o ícone de fechar inicialmente */
+}
+.navbar.active {
+    display: block; /* Mostra o navbar quando ativo */
+}
 
 @media(max-width:1200px){
     html{
@@ -479,6 +489,14 @@ section{
     .portfolio-container{
         grid-template-columns: repeat(2, 1fr);
     }
+    .portfolio img{
+        height: 300px;
+    }
+    .bar i{
+        display: block;
+        font-size: 25px;
+    }
+
 }
 @media(max-width:617px){
     .portfolio-container{
